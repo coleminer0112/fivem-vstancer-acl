@@ -35,7 +35,12 @@ namespace VStancer.Client.UI
             });
 
             MenuController.MenuAlignment = MenuController.MenuAlignmentOption.Right;
-            MenuController.MenuToggleKey = (Control)_script.Config.ToggleMenuControl;
+
+            if (_script.Config.ToggleMenuControl >= 0)
+            {
+                MenuController.MenuToggleKey = (Control)_script.Config.ToggleMenuControl;
+            }
+
             MenuController.EnableMenuToggleKeyOnController = false;
             MenuController.DontOpenAnyMenu = true;
             MenuController.MainMenu = this;
