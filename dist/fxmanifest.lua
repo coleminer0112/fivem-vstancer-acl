@@ -19,6 +19,10 @@ client_scripts {
 	'VStancer.Client.net.dll'
 }
 
+server_scripts {
+  'server.lua'
+}
+
 exports {
 	"GetWheelPreset",
 	"ResetWheelPreset",
